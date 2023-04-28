@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/SlavaKholod/goit-react-hw-01-components/static/css/main.7acaea2f.css",
-    "main.js": "/SlavaKholod/goit-react-hw-01-components/static/js/main.e6e17218.js",
+    "main.js": "/SlavaKholod/goit-react-hw-01-components/static/js/main.96870eda.js",
     "index.html": "/SlavaKholod/goit-react-hw-01-components/index.html",
     "main.7acaea2f.css.map": "/SlavaKholod/goit-react-hw-01-components/static/css/main.7acaea2f.css.map",
-    "main.e6e17218.js.map": "/SlavaKholod/goit-react-hw-01-components/static/js/main.e6e17218.js.map"
+    "main.96870eda.js.map": "/SlavaKholod/goit-react-hw-01-components/static/js/main.96870eda.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.e6e17218.js"
+    "static/js/main.96870eda.js"
   ]
 }
