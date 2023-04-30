@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import cssModule from './Spatistics.module.css';
 
 const StatItem = ({ label, percentage }) => {
   return (
     <>
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}</span>
+      <span className={cssModule.label}>{label}</span>
+      <span className="percentage">{percentage}%</span>
     </>
   );
 };

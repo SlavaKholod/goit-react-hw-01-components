@@ -1,14 +1,20 @@
 import PropTypes from 'prop-types';
 import StatItem from './StatItem';
+import cssModule from './Spatistics.module.css';
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
-      <ul className="stat-list">
+    <section className={cssModule.statistics}>
+      {title && <h2 className={cssModule.title}>{title}</h2>}
+      <ul className={cssModule['stat-list']}>
         {stats.map(element => {
+          let randomColor = Math.floor(Math.random() * 16777215).toString(16);
           return (
-            <li className="item" key={element.id}>
+            <li
+              className={cssModule.item}
+              key={element.id}
+              style={{ backgroundColor: `#${randomColor}` }}
+            >
               <StatItem label={element.label} percentage={element.percentage} />
             </li>
           );
