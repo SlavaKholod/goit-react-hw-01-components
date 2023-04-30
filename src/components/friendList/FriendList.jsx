@@ -7,14 +7,12 @@ const FriendList = ({ friends }) => {
     <ul className={cssModule['friend-list']}>
       {friends.map(element => {
         return (
-            <li className={cssModule.item} key={element.id}>
-            <FriendListItem
-              avatar={element.avatar}
-              name={element.name}
-              isOnline={element.isOnline}
-              id={element.id}
-            />
-      </li>
+          <FriendListItem
+            key={element.id}
+            avatar={element.avatar}
+            name={element.name}
+            isOnline={element.isOnline}
+          />
         );
       })}
     </ul>
@@ -22,7 +20,11 @@ const FriendList = ({ friends }) => {
 };
 
 FriendList.propTypes = {
-  friends: PropTypes.arrayOf(PropTypes.shape({})),
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default FriendList;
